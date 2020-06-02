@@ -20,8 +20,11 @@ app.listen(3000, function() {
 });
 
 app.get('/', (req, res) => {
-  res.render('recipes.ejs')
-})
+  Recipe.find({}, (err, recipes) => {
+  res.render('recipes.ejs', { recipesToAdd: recipes});
+});
+});
+
 
 app.post('/', async (req, res) => {
    const recipe = new Recipe({
