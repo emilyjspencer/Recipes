@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const dotenv = require('dotenv');
+const Recipe = require("./models/Recipe");
 dotenv.config();
 
 app.set("view engine", "ejs");
