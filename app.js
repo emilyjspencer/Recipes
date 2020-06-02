@@ -11,9 +11,9 @@ const mongoose = require("mongoose");
 
 mongoose.set("useFindAndModify", false);
 
-mongoose.connect(process.env.CONNECTION, { useNewUrlParser: true }, () => {
 
-console.log("Connection to the database has been established");
+mongoose.connect(process.env.CONNECTION, { useNewUrlParser: true }, () => {  
+  console.log("Connection to the database has been established");
 
 app.listen(3000, function() {
   console.log("Listening for requests on port 3000")
@@ -23,11 +23,21 @@ app.get('/', (req, res) => {
   res.render('recipes.ejs')
 })
 
-app.post('/',(req, res) => {
-  console.log(req.body);
+app.post('/', async (req, res) => {
+   const recipe = new Recipe({
+      content: req.body.content
+    });
+    try {
+      await recipe.save();
+      console.log(content)
+        res.redirect("/");
+        } catch (err) {
+        res.redirect("/");
+        }
+});
 });
 
-});
+
 
 
 
