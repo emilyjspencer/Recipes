@@ -41,14 +41,12 @@ app.post('/', async (req, res) => {
     });
 });
 
-app
-  .route("/edit/:id")
+app.route("/edit/:id")
   .get((req, res) => {
     const id = req.params.id;
     Recipe.find({}, (err, recipes) => {
       res.render("edit.ejs", { recipesToAdd: recipes, idRecipe: id});
-    });
-    
+    });   
 })
   .post((req, res) => {
   const id = req.params.id;
@@ -58,7 +56,13 @@ app
   });
   });
 
-   
+app.route("/remove/:id").get((req, res) => {
+  const id = req.params.id;
+  Recipe.findByIdAndRemove(id, err => {
+  if (err) return res.send(500, err);
+  res.redirect("/");
+  });
+});
 
 
 
