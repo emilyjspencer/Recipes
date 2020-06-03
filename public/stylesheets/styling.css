@@ -7,19 +7,20 @@
   }
 
 body {
-  background: #a5c1e0;
+  background: #ecc7e5;
   font-family: Dancing Script;
+  color: black;
 }
 
 .recipe-container {
-  color: white;
+  color: rgb(83, 81, 81);
   position: absolute;
   top:50%;
   left: 50%;
   padding: 20px;
   width: 600px;
   transform: translate(-50%,-50%);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(231, 159, 219, 0.1);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -27,7 +28,7 @@ body {
 }
 
 .recipe {
-  width: 400px;
+  width: 420px;
 }
   
 .recipe-container h2 {
@@ -64,7 +65,7 @@ body {
   border: 5px;
   border-radius: 5px;
   font-family: 'Dancing Script', sans-serif;
-  background: rgba(82, 190, 218, 0.3);
+  background: rgba(235, 194, 233, 0.3);
   display: flex;
   flex-direction: row;
 }
@@ -94,14 +95,14 @@ body {
 }
 
 .recipe-list-item .cancel {
-  color: white;
+  color: rgb(236, 129, 218);
   text-decoration: none;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   padding: 5px;
   font-family: 'Dancing Script', sans-serif;
-  background-color: rgb(125, 174, 230);
+  background-color: rgb(243, 217, 239);
   margin-left: 5px;
 }
 
@@ -111,16 +112,16 @@ body {
 }
 
     
-.todo-list-item .edit {
-  color : rgb(213, 125, 235);
+.recipe-list-item .edit {
+  color : rgb(233, 25, 233);
   margin-right: 10px;
   cursor:pointer;
   text-decoration: none;
 }
 
     
-.todo-list-item .remove {
-  color : rgb(239, 166, 241);
+.recipe-list-item .remove {
+  color : rgb(104, 101, 104);
   margin-right: 5px;
   cursor:pointer;
   text-decoration: none;
