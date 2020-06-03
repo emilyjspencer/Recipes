@@ -9,13 +9,18 @@ integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7
 </head>
 <body>
   <div align="center" class="recipes-container">
-    <h2>My Recipes</h2>
+    <br>
+    <p id="header">My Recipes</p>
+    <br>
+    <br>
     <div class="recipe">
     <form action="/" method="POST" class="recipe-header">
-    <input type="text" name="content" placeholder="Add a recipe...">
+    <input id="input" type="text" name="content" placeholder="Add a recipe......">
     <button type="submit"><span class="fas fa-plus"></span></button>
     </form>
     </div>
+    <br>
+    <br>
     <ul class="recipe-list">
       <% recipesToAdd.forEach(details => { %>
       <li class="recipe-list-item">
