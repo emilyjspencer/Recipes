@@ -2,7 +2,7 @@
 
 ## About Recipes
 
-### Recipes is a simple app built with Node Express and MongoDB. I decided to use the cloud-based MongoDB Atlas with Mongoose as an alternative to MongoDB. Users can add recipes, edit and delete recipes.
+* Recipes is a simple app built with Node Express and MongoDB. I decided to use the cloud-based MongoDB Atlas with Mongoose as an alternative to MongoDB. Users can add recipes, edit and delete recipes.
 
 ## How to run
 
@@ -23,8 +23,10 @@ node app.js
 
 ### What it looks like:
 
+Homepage:
 ![output](home.png)
+Editing a recipe:
 ![output](edit.png)
 
-### Thoughts - I would like to make the inputs clickable so that the user can click on the link instead of having to manually copy and paste it into the browser.
+**Thoughts** - I would like to make the inputs clickable so that the user can click on the link instead of having to manually copy and paste it into the browser.
 
