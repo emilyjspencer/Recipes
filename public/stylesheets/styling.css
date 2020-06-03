@@ -1,4 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 body {
-    background: #a5c1e0;
-    font-family: Dancing Script;
+  background: #a5c1e0;
+  font-family: Dancing Script;
 }
+
+.recipe-container {
+  color: white;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  padding: 20px;
+  width: 600px;
+  transform: translate(-50%,-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe {
+  width: 400px;
+}
+  
+.recipe-container h2 {
+  padding: 10px;
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2em;
+}
+  
+.recipe-header input {
+  width: 92%;
+  border: 3px;
+  border-radius: 5px;
+  height: 20px;
+  font-family: 'Dancing Script', sans-serif;
+}
+   
+.recipe-header button {
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+  font-family: 'Dancing Script', sans-serif;
+  background-color: rgb(230, 150, 206);
+}
+    
+.recipe-container ul {
+  list-style: none;
+}
+
+.recipe-list-item {
+  padding: 10px;
+  margin-top: 10px;
+  border: 5px;
+  border-radius: 5px;
+  font-family: 'Dancing Script', sans-serif;
+  background: rgba(82, 190, 218, 0.3);
+  display: flex;
+  flex-direction: row;
+}
+    
+.recipe-list-item form {
+  width: 100%;
+  display: flex;
+}
+
+.recipe-list-item input {
+  flex-grow: 2;
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Dancing Script', sans-serif;
+}
+
+    
+.recipe-list-item button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  font-family: 'Dancing Script', sans-serif;
+  background-color: rgb(221, 141, 241);
+}
+
+.recipe-list-item .cancel {
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  font-family: 'Dancing Script', sans-serif;
+  background-color: rgb(125, 174, 230);
+  margin-left: 5px;
+}
+
+    
+.recipe-list-item div {
+  flex-grow: 2;
+}
+
+    
+.todo-list-item .edit {
+  color : rgb(213, 125, 235);
+  margin-right: 10px;
+  cursor:pointer;
+  text-decoration: none;
+}
+
+    
+.todo-list-item .remove {
+  color : rgb(239, 166, 241);
+  margin-right: 5px;
+  cursor:pointer;
+  text-decoration: none;
+}
+
+
