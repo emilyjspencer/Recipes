@@ -38,8 +38,27 @@ app.post('/', async (req, res) => {
         } catch (err) {
         res.redirect("/");
         }
+    });
 });
-});
+
+app
+  .route("/edit/:id")
+  .get((req, res) => {
+    const id = req.params.id;
+    Recipe.find({}, (err, recipes) => {
+      res.render("edit.ejs", { recipesToAdd: recipes, idRecipe: id});
+    });
+    
+})
+  .post((req, res) => {
+  const id = req.params.id;
+  Recipe.findByIdAndUpdate(id, { content: req.body.content }, err => {
+    if (err) return res.send(500, err);
+    res.redirect('/');
+  });
+  });
+
+   
 
 
 

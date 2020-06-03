@@ -11,7 +11,7 @@
     <div class="recipe-container">
     <h2>Recipes</h2>
     <div class="recipe">
-    <form action="/" method="POST" class="recipe-header">
+    <form action="" method="POST" class="recipe-header">
       <input type="text" name="content">
       <button type="submit"><span class="fas fa-plus"></span></button>
     </form>
@@ -29,7 +29,9 @@
     <li class="recipe-list-item">
     <div class="recipe-list-item-name"><%= details.content %></div>
     <a href="/edit/<%= details._id %>" class="edit"> <span class="fas fa-edit"></span>
-   </a>
+    </a>
+    <a href="/remove/<%= details._id %>" class="remove"> <span class="fas fa-times"></span>
+  </a>
   </li>
  <% } %>
  <% }) %>
@@ -37,3 +39,4 @@
 </div>
 </div>
 </body>
+</html>

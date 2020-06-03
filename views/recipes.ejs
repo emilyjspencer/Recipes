@@ -20,7 +20,13 @@ integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7
       <% recipesToAdd.forEach(details => { %>
       <li class="recipe-list-item">
       <div class="recipe-list-item-name"><%= details.content %></div>
-      </li>
+      <a href="/edit/<%= details._id %>" class="edit">
+        <span class="fas fa-edit"></span>
+        </a>
+        <a href="/remove/<%= details._id %>" class="remove">
+        <span class="fas fa-times"></span>
+        </a>
+        </li>
       <% }) %>
     </ul>
   </div>       
