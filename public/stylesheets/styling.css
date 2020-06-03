@@ -38,7 +38,7 @@ body {
   padding: 20px;
   width: 600px;
   transform: translate(-50%,-50%);
-  background: rgba(231, 159, 219, 0.1);
+  background: rgb(214, 170, 204);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
